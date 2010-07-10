@@ -54,6 +54,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
 
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/to/prebuilt/common/bin/sysinit:system/bin/sysinit
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/to/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
