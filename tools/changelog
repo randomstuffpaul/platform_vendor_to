@@ -1,7 +1,18 @@
 #!/bin/sh
 
+# Determine what to name the new signed package
+MODVERSION=`sed -n -e'/ro\.to\.version/s/^.*=//p' $OUT/system/build.prop`
+# Check for '_' in product name
+if [ "`echo -e $TARGET_PRODUCT | cut -d '_' -f3`" != "" ]
+then
+TARGET_PRODUCT_FINAL=`echo -e $TARGET_PRODUCT | cut -d '_' -f2,3`
+else
+TARGET_PRODUCT_FINAL=`echo -e $TARGET_PRODUCT | cut -d '_' -f2`
+fi
+
 # Exports
 export Changelog=changelog.txt
+export Changelog2=$MODVERSION-$TARGET_PRODUCT_FINAL-changelog.log
 
 if [ -f $Changelog ];
 then
@@ -30,3 +41,4 @@ done
 
 # Let squisher handle the zipping part
 cp $Changelog $OUT/repack.d/ota/
+cp $Changelog $OUT/$Changelog2
