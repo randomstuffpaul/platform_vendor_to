@@ -50,3 +50,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
+
+# Include OctOS versioning
+include vendor/to/config/to_versioning.mk

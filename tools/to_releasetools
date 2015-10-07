@@ -1,0 +1,122 @@
+#!/bin/bash
+#
+# Team Octos release tools
+#
+. $ANDROID_BUILD_TOP/vendor/to/tools/functions
+
+OUT_TARGET_HOST=`uname -a | grep Darwin`
+if [ -z "$OUT_TARGET_HOST" ]
+then
+   OUT_TARGET_HOST=linux-x86
+   MD5=md5sum
+   XARGS="xargs --max-args=1 --max-procs $TO_OR"
+   SED=sed
+else
+   OUT_TARGET_HOST=darwin-x86
+   MD5=md5
+   XARGS="xargs -n 1 -P `sysctl hw.ncpu | awk '{print $2}'`"
+   SED=gsed
+fi
+
+if [ -z "$OUT" -o ! -d "$OUT" ]; then
+	echo -e $CL_RED"ERROR: $0 only works with a full build environment. $OUT should exist."$CL_RST
+	exit 1
+fi
+
+QUIET=-q
+
+REPACK=$OUT/repack.d
+echo -e "Sanitizing Environment..."
+rm -rf $REPACK
+mkdir -p $REPACK
+echo -e
+
+# Unpack the otapackage and opticharge all apks
+mkdir $REPACK/ota
+(
+cd $REPACK/ota
+echo -e "Unpacking $OTAPACKAGE..."
+unzip $QUIET $OTAPACKAGE
+echo -e
+
+#add SuperSu
+if [ -d $OUT/supersu ]
+then
+cp -r $OUT/supersu $REPACK/ota/
+fi
+
+#add aroma and other install scripts if required by the device
+if [ -d $OUT/octotools ]
+then
+cp -r $OUT/octotools/* $REPACK/ota/
+fi
+)
+
+# Fix build.prop
+$SED -i \
+	-e '/ro\.kernel\.android\.checkjni/d' \
+	-e '/ro\.build\.type/s/eng/user/' \
+	$REPACK/ota/system/build.prop
+
+# Determine what to name the new signed package
+MODVERSION=`sed -n -e'/ro\.to\.version/s/^.*=//p' $OUT/system/build.prop`
+# Check for '_' in product name
+if [ "`echo -e $TARGET_PRODUCT | cut -d '_' -f3`" != "" ]
+then
+TARGET_PRODUCT_FINAL=`echo -e $TARGET_PRODUCT | cut -d '_' -f2,3`
+else
+TARGET_PRODUCT_FINAL=`echo -e $TARGET_PRODUCT | cut -d '_' -f2`
+fi
+echo -e $CL_CYN"MODVERSION: $MODVERSION"$CL_RST
+OUTFILE=$OUT/$MODVERSION-$TARGET_PRODUCT_FINAL.zip
+
+if [ "$TO_CHANGELOG" = true ]
+then
+# Add changelog
+. $ANDROID_BUILD_TOP/vendor/to/tools/changelog
+else
+echo -e "No changelog..."
+echo -e
+fi
+
+# Pack it up and sign
+echo -e "Zipping package..."
+( cd $REPACK/ota; zip $QUIET -r $REPACK/update.zip . )
+echo -e
+echo -e "Signing package..."
+SECURITYDIR=$ANDROID_BUILD_TOP/build/target/product/security
+java -Xmx1024m \
+	-jar $OUT/../../../host/$OUT_TARGET_HOST/framework/signapk.jar \
+	-w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 \
+	$REPACK/update.zip $OUTFILE
+echo -e
+echo -e "Cleaning up..."
+rm -rf $REPACK
+echo -e
+
+echo -e $CL_CYN"▄▄▄█████▓▓█████ ▄▄▄       ███▄ ▄███▓    ▒█████   ▄████▄  ▄▄▄█████▓ ▒█████    ██████"$CL_RST
+echo -e $CL_CYN"▓  ██▒ ▓▒▓█   ▀▒████▄    ▓██▒▀█▀ ██▒   ▒██▒  ██▒▒██▀ ▀█  ▓  ██▒ ▓▒▒██▒  ██▒▒██    ▒"$CL_RST
+echo -e $CL_CYN"▒ ▓██░ ▒░▒███  ▒██  ▀█▄  ▓██    ▓██░   ▒██░  ██▒▒▓█    ▄ ▒ ▓██░ ▒░▒██░  ██▒░ ▓██▄ "$CL_RST  
+echo -e $CL_CYN"░ ▓██▓ ░ ▒▓█  ▄░██▄▄▄▄██ ▒██    ▒██    ▒██   ██░▒▓▓▄ ▄██▒░ ▓██▓ ░ ▒██   ██░  ▒   ██▒"$CL_RST
+echo -e $CL_CYN"  ▒██▒ ░ ░▒████▒▓█   ▓██▒▒██▒   ░██▒   ░ ████▓▒░▒ ▓███▀ ░  ▒██▒ ░ ░ ████▓▒░▒██████▒▒"$CL_RST
+echo -e $CL_CYN"  ▒ ░░   ░░ ▒░ ░▒▒   ▓▒█░░ ▒░   ░  ░   ░ ▒░▒░▒░ ░ ░▒ ▒  ░  ▒ ░░   ░ ▒░▒░▒░ ▒ ▒▓▒ ▒ ░"$CL_RST
+echo -e $CL_CYN"    ░     ░ ░  ░ ▒   ▒▒ ░░  ░      ░     ░ ▒ ▒░   ░  ▒       ░      ░ ▒ ▒░ ░ ░▒  ░ ░"$CL_RST
+echo -e $CL_CYN"  ░         ░    ░   ▒   ░      ░      ░ ░ ░ ▒  ░          ░      ░ ░ ░ ▒  ░  ░  ░"$CL_RST  
+echo -e $CL_CYN"            ░  ░     ░  ░       ░          ░ ░  ░ ░                   ░ ░        ░"$CL_RST  
+echo -e $CL_CYN"                                                ░"$CL_RST
+
+# Create a md5 checksum image of the repacked package
+(
+img=`basename $OUTFILE`
+cd `dirname $OUTFILE`
+$MD5 $img >$img.md5
+echo -e
+echo -e $CL_CYN"===========-Package complete-==========="$CL_RST
+echo -e $CL_CYN"zip:"$CL_MAG" $OUTFILE"$CL_RST
+echo -e $CL_CYN"md5:"$CL_MAG" $(cat $img.md5 | awk '{ print $1 }')"$CL_RST
+echo -e $CL_CYN"size:"$CL_MAG" $(ls -lah $OUTFILE | awk '{ print $5}') ($(ls -la $OUTFILE | awk '{ print $5}'))"$CL_RST
+echo -e $CL_CYN"========================================"$CL_RST
+echo -e
+)
+
+exit 0
