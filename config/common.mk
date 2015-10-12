@@ -54,5 +54,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
 
+# Overlays
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/to/overlay/common
+
 # Include OctOS versioning
 include vendor/to/config/to_versioning.mk
