@@ -7,3 +7,6 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     PhaseBeam
 
+# Busybox
+PRODUCT_PACKAGES += \
+    Busybox
