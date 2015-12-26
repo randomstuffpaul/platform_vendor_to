@@ -46,10 +46,7 @@ PRODUCT_COPY_FILES += \
 
 # Copy LatinIME for gesture typing
 PRODUCT_COPY_FILES += \
-    vendor/to/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
-    vendor/to/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
-    vendor/to/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so \
-    vendor/to/prebuilt/common/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so
+    vendor/to/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
