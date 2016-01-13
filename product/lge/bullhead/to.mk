@@ -5,6 +5,9 @@ DEVICE_PACKAGE_OVERLAYS += vendor/to/product/lge/bullhead/overlay
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
+# Install SuperSu
+INSTALL_SUPERSU := false
+
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/to/config/common_full_phone.mk)
 

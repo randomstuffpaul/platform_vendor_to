@@ -68,8 +68,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # SuperSU
-PRODUCT_COPY_FILES += \
-    vendor/to/prebuilt/common/supersu/supersu.zip:supersu/supersu.zip
+ifneq ($(INSTALL_SUPERSU),false)
+        PRODUCT_COPY_FILES += \
+        vendor/to/prebuilt/common/supersu/supersu.zip:supersu/supersu.zip
+endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1

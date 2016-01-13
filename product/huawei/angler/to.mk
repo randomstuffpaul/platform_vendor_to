@@ -19,6 +19,9 @@ DEVICE_PACKAGE_OVERLAYS += vendor/to/product/huawei/angler/overlay
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
+# Install SuperSu
+INSTALL_SUPERSU := false
+
 # Inherit some common Team OctOs configuration
 $(call inherit-product, vendor/to/config/common_full_phone.mk)
 # Inherit AOSP device configuration for angler.
