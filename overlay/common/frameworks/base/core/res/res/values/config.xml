@@ -49,4 +49,7 @@
     <string-array translatable="false" name="config_globalActionsList">
         <item>power</item>
     </string-array>
+
+    <!-- Enable lockscreen rotation by default -->
+    <bool name="config_enableLockScreenRotation">true</bool>
 </resources>
