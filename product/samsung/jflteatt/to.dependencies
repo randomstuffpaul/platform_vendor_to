@@ -6,10 +6,10 @@
     "revision": "cm-13.0"
   },
   {
-    "remote": "to",
-    "repository": "platform_device_samsung_jf-common",
+    "remote": "cm",
+    "repository": "android_device_samsung_jf-common",
     "target_path": "device/samsung/jf-common",
-    "revision": "oct-mm"
+    "revision": "cm-13.0"
   },
   {
     "remote": "cm",
@@ -18,10 +18,16 @@
     "revision": "cm-13.0"
   },
   {
-    "remote": "to",
-    "repository": "platform_kernel_samsung_jf",
+    "remote": "cm",
+    "repository": "android_device_qcom_common",
+    "target_path": "device/qcom/common",
+    "revision": "cm-13.0"
+  },
+  {
+    "remote": "cm",
+    "repository": "android_kernel_samsung_jf",
     "target_path": "kernel/samsung/jf",
-    "revision": "oct-mm"
+    "revision": "cm-13.0"
   },
   {
     "remote": "cm",
