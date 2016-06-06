@@ -1,0 +1,32 @@
+[
+  {
+    "remote": "cm",
+    "repository": "android_hardware_nvidia_power",
+    "target_path": "hardware/nvidia/power",
+    "revision": "cm-13.0"
+  },
+  { 
+    "remote": "github",
+    "repository": "carbon-shield/android_device_nvidia_shieldtablet",
+    "target_path": "device/nvidia/shieldtablet",
+    "revision": "oct-mm"
+  },
+  { 
+    "remote": "github",
+    "repository": "carbon-shield/android_device_nvidia_shield-common",
+    "target_path": "device/nvidia/shield-common",
+    "revision": "cr-4.0"
+  },
+  {
+   "remote": "github",
+   "repository": "carbon-shield/android_kernel_nvidia_shieldtablet",
+   "target_path": "kernel/nvidia/shield",
+   "revision": "cr-4.0"
+  },
+  {
+   "remote": "github",
+   "repository": "CM-Shield/proprietary_vendor_nvidia",
+   "target_path": "vendor/nvidia",
+   "revision": "cm-13.0"
+  }
+]
