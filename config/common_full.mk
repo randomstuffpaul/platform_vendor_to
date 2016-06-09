@@ -1,6 +1,8 @@
 # Inherit common TO stuff
 $(call inherit-product, vendor/to/config/common.mk)
 
+PRODUCT_SIZE := full
+
 # OctOs Packages
 PRODUCT_PACKAGES += \
     AboutOctOs \
