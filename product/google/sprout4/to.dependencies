@@ -1,9 +1,9 @@
 [
     {
-      "remote":      "cm",
-      "repository":  "android_device_google_sprout4",
+      "remote":      "github",
+      "repository":  "ujwalp15/android_device_google_sprout4",
       "target_path": "device/google/sprout4",
-      "revision":    "cm-13.0"
+      "revision":    "oct-mm"
     },
     {
       "remote":      "cm",
