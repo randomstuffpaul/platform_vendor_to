@@ -40,6 +40,10 @@ PRODUCT_COPY_FILES += \
     vendor/to/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
     vendor/to/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
+# Backup Services whitelist
+PRODUCT_COPY_FILES += \
+    vendor/to/config/permissions/backup.xml:system/etc/sysconfig/backup.xml
+
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
     vendor/to/prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
