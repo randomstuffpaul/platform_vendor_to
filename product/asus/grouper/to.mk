@@ -23,6 +23,7 @@ KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.
 TARGET_GCC_VERSION_EXP := 4.9-uber
 endif
 
+EXCLUDE_GELLO := true
 #PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Inherit some common Team OctOs configuration

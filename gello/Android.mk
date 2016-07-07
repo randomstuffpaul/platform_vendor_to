@@ -13,6 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+ifneq ($(EXCLUDE_GELLO),true)
 LOCAL_PATH := $(call my-dir)
 
 SOURCE_GELLO_PATH := $(LOCAL_PATH)/../../../external/gello-build
@@ -48,4 +49,5 @@ LOCAL_MAVEN_ARTIFACT := gello
 LOCAL_MAVEN_PACKAGING := apk
 
 include $(BUILD_MAVEN_PREBUILT)
+endif
 endif
