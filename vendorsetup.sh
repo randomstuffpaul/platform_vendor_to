@@ -27,6 +27,7 @@ add_lunch_combo to_ls990-userdebug
 add_lunch_combo to_serranodsdd-userdebug
 add_lunch_combo to_serranolteusc-userdebug
 add_lunch_combo to_serranoltexx-userdebug
+add_lunch_combo to_serrano3gxx-userdebug
 add_lunch_combo to_shamu-userdebug
 add_lunch_combo to_t0lte-userdebug
 add_lunch_combo to_us990-userdebug

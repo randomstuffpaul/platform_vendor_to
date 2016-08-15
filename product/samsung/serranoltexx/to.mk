@@ -3,7 +3,7 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 # Team OctOs device maintainer info
 ifneq (COMMUNITY, $(TO_BUILDTYPE))
-DEVICE_PACKAGE_OVERLAYS += vendor/to/product/samsung/serranolteusc/maintainer
+DEVICE_PACKAGE_OVERLAYS += vendor/to/product/samsung/serranoltexx/maintainer
 endif
 
 $(call inherit-product, vendor/to/config/common_full_phone.mk)
