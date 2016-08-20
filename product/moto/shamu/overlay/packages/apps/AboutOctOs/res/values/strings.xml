@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- URL of the Kraken kernel for the device-->
+    <string name="octos_kraken_url">http://www.teamoctos.com/kraken-kernel-oct-m/</string>
+</resources>
