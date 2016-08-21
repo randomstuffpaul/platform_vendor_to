@@ -18,10 +18,10 @@
       "revision":    "cm-13.0"
     },
     {
-      "remote":      "to",
-      "repository":  "platform_kernel_lge_g3",
+      "remote":      "cm",
+      "repository":  "android_kernel_lge_g3",
       "target_path": "kernel/lge/g3",
-      "revision":    "oct-mm"
+      "revision":    "cm-13.0"
     },
     {
       "remote":      "tm",
