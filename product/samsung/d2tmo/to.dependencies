@@ -30,10 +30,10 @@
     "revision": "cm-13.0"
   },
   {
-    "remote": "to",
-    "repository": "platform_kernel_samsung_d2",
+    "remote": "cm",
+    "repository": "android_kernel_samsung_d2",
     "target_path": "kernel/samsung/d2",
-    "revision": "oct-mm"
+    "revision": "cm-13.0"
   },
   {
     "remote": "tm",
