@@ -8,9 +8,6 @@ $(call inherit-product, vendor/to/config/nfc_enhanced.mk)
 
 $(call inherit-product, vendor/to/product/lge/g3-common/to.mk)
 
-# Custom kernel defconfig (Must exist in kernel source)
-TARGET_KERNEL_CONFIG_CUSTOM := octos_d850_defconfig
-
 PRODUCT_NAME := to_d850
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
