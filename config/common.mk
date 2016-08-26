@@ -3,6 +3,11 @@ PRODUCT_BRAND ?= teamoctos
 # Include OctOS bootanimation
 include vendor/to/config/bootanimation.mk
 
+#Nexus Launcher
+PRODUCT_COPY_FILES += \
+vendor/to/prebuilt/common/app/NexusLauncherPrebuilt.apk:system/priv-app/nexus-launcher/NexusLauncherPrebuilt.apk \
+vendor/to/prebuilt/common/app/WallpaperPickerGooglePrebuilt.apk:system/app/nexus-launcher/WallpaperPickerGooglePrebuilt.apk 
+
 ifdef TO_NIGHTLY
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=teamoctosnightly
