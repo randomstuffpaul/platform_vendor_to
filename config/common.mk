@@ -33,6 +33,10 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 	ro.adb.secure=0 \
 	ro.secure=0
 
+# Allow tethering without provisioning app
+PRODUCT_PROPERTY_OVERRIDES += \
+    net.tethering.noprovisioning=true
+
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/to/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
