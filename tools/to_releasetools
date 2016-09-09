@@ -85,8 +85,8 @@ echo -e "Zipping package..."
 echo -e
 echo -e "Signing package..."
 SECURITYDIR=$ANDROID_BUILD_TOP/build/target/product/security
-java -Xmx1024m \
-	-jar $OUT/../../../host/$OUT_TARGET_HOST/framework/signapk.jar \
+java -Xmx20484m \
+	-jar  $ANDROID_BUILD_TOP/vendor/to/tools/signapk.jar \
 	-w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 \
 	$REPACK/update.zip $OUTFILE
 echo -e
