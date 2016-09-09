@@ -5,5 +5,4 @@ PRODUCT_COPY_FILES += \
 # Telephony packages
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
-    Mms \
     Stk

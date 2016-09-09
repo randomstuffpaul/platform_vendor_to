@@ -1,11 +1,10 @@
 # Inherit additional stuff
 $(call inherit-product, vendor/to/config/common.mk)
 
-# Optional packages
+# Main Required Packages
 PRODUCT_PACKAGES += \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    PhaseBeam
+    Launcher3 \
+    LiveWallpapersPicker
 
 # Busybox
 PRODUCT_PACKAGES += \
