@@ -1,3 +1,6 @@
+# Do not install SuperSu
+INSTALL_SUPERSU := false
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
