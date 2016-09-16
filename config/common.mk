@@ -1,6 +1,10 @@
 # Include OctOS bootanimation
 include vendor/to/config/bootanimation.mk
 
+#substratum
+PRODUCT_COPY_FILES += \
+vendor/to/prebuilt/common/app/substratum.apk:system/priv-app/substratum/substratum.apk 
+
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-google
@@ -81,3 +85,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 # Include OctOS versioning
 include vendor/to/config/to_versioning.mk
+
+# Extra Optional packages
+ PRODUCT_PACKAGES += \
+     masquerade
