@@ -7,6 +7,7 @@ PRODUCT_PACKAGES += \
     Basic \
     CalendarWidget \
     LatinIME \
+    masquerade \
     OmniSwitch \
     KernelAdiutor \
     AboutOctOs

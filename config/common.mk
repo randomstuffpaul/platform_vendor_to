@@ -3,10 +3,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 # Include OctOS bootanimation
 include vendor/to/config/bootanimation.mk
 
+#substratum
+PRODUCT_COPY_FILES += \
+    vendor/to/prebuilt/common/apk/substratum.apk:system/app/substratum/substratum.apk
+
 #Pixel Launcher
 PRODUCT_COPY_FILES += \
-vendor/to/prebuilt/common/apk/PixelLauncherPrebuilt.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
-vendor/to/prebuilt/common/apk/WallpaperPickerGooglePrebuilt.apk:system/app/WallpaperPickerGoogle/WallpaperPickerGooglePrebuilt.apk
+    vendor/to/prebuilt/common/apk/PixelLauncherPrebuilt.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
+    vendor/to/prebuilt/common/apk/WallpaperPickerGooglePrebuilt.apk:system/app/WallpaperPickerGoogle/WallpaperPickerGooglePrebuilt.apk
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
