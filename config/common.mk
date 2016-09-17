@@ -3,7 +3,7 @@ include vendor/to/config/bootanimation.mk
 
 #substratum
 PRODUCT_COPY_FILES += \
-vendor/to/prebuilt/common/app/substratum.apk:system/priv-app/substratum/substratum.apk 
+vendor/to/prebuilt/common/app/substratum.apk:system/app/substratum/substratum.apk 
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
