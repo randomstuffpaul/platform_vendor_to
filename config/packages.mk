@@ -10,7 +10,8 @@ PRODUCT_PACKAGES += \
     CalendarWidget \
     Chromium \
     LatinIME \
-    OmniSwitch
+    OmniSwitch \
+    KernelAdiutor
 
 # Extra tools
 PRODUCT_PACKAGES += \
