@@ -11,7 +11,8 @@ PRODUCT_PACKAGES += \
     Chromium \
     LatinIME \
     OmniSwitch \
-    KernelAdiutor
+    KernelAdiutor \
+    AboutOctOs
 
 # Extra tools
 PRODUCT_PACKAGES += \
