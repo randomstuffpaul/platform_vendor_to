@@ -11,7 +11,8 @@ PRODUCT_PACKAGES += \
 
 # OctOs Packages
 PRODUCT_PACKAGES += \
-    KernelAdiutor
+    KernelAdiutor \
+    AboutOctOs
 
 # Busybox
 PRODUCT_PACKAGES += \
