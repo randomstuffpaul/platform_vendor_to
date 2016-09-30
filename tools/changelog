@@ -1,0 +1,44 @@
+#!/bin/sh
+
+# Determine what to name the new signed package
+MODVERSION=`sed -n -e'/ro\.to\.version/s/^.*=//p' $OUT/system/build.prop`
+# Check for '_' in product name
+if [ "`echo -e $TARGET_PRODUCT | cut -d '_' -f3`" != "" ]
+then
+TARGET_PRODUCT_FINAL=`echo -e $TARGET_PRODUCT | cut -d '_' -f2,3`
+else
+TARGET_PRODUCT_FINAL=`echo -e $TARGET_PRODUCT | cut -d '_' -f2`
+fi
+
+# Exports
+export Changelog=changelog.txt
+export Changelog2=$MODVERSION-$TARGET_PRODUCT_FINAL-changelog.log
+
+if [ -f $Changelog ];
+then
+	rm -f $Changelog
+fi
+
+touch $Changelog
+
+# Print something to build output
+echo "Generating changelog..."
+
+for i in $(seq 7);
+do
+export After_Date=`date --date="$i days ago" +%m-%d-%Y`
+k=$(expr $i - 1)
+	export Until_Date=`date --date="$k days ago" +%m-%d-%Y`
+
+	# Line with after --- until was too long for a small ListView
+	echo '--  ' $Until_Date  >> $Changelog
+	echo >> $Changelog;
+
+	# Cycle through every repo to find commits between 2 dates
+	repo forall -pc 'git log --format="| Commit: %h | Title: %s | By: %an " --reverse --after=$After_Date --until=$Until_Date' >> $Changelog
+	echo >> $Changelog;
+done
+
+# Let squisher handle the zipping part
+cp $Changelog $OUT/repack.d/ota/
+cp $Changelog $OUT/$Changelog2
