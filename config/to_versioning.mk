@@ -14,7 +14,7 @@ ifndef TO_BUILDTYPE
 endif
 
 # Filter out random types, so it'll reset to COMMUNITY
-ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(TO_BUILDTYPE)),)
+ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL WEEKLY,$(TO_BUILDTYPE)),)
     TO_BUILDTYPE :=
 endif
 
