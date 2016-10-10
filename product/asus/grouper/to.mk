@@ -19,6 +19,9 @@ TARGET_SCREEN_WIDTH := 800
 # Install SuperSu
 #INSTALL_SUPERSU := false
 
+# Install PHH Superuser
+INSTALL_SUPERUSER := false
+
 #PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Inherit some common Team OctOs configuration

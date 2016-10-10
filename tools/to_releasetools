@@ -45,6 +45,12 @@ then
 cp -r $OUT/supersu $REPACK/ota/
 fi
 
+#add Phh superuser
+if [ -d $OUT/superuser ]
+then
+cp -r $OUT/superuser $REPACK/ota/
+fi
+
 #add aroma and other install scripts if required by the device
 if [ -d $OUT/octotools ]
 then

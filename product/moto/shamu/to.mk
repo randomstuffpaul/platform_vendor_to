@@ -22,6 +22,9 @@ TARGET_SCREEN_WIDTH := 2560
 # Install SuperSu
 INSTALL_SUPERSU := false
 
+# Install PHH Superuser
+#INSTALL_SUPERUSER := false
+
 # Inherit some common Team OctOs configuration
 $(call inherit-product, vendor/to/config/common_full_phone.mk)
 
