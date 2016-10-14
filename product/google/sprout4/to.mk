@@ -16,12 +16,6 @@
 TARGET_SCREEN_HEIGHT := 854
 TARGET_SCREEN_WIDTH := 480
 
-# Install SuperSu
-#INSTALL_SUPERSU := false
-
-# Install PHH Superuser
-INSTALL_SUPERUSER := false
-
 # Inherit some common Team OctOs configuration
 $(call inherit-product, vendor/to/config/common_full_phone.mk)
 # Inherit AOSP device configuration for angler.

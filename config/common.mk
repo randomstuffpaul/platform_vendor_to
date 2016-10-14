@@ -5,6 +5,12 @@ include vendor/to/config/bootanimation.mk
 PRODUCT_COPY_FILES += \
 vendor/to/prebuilt/common/app/substratum.apk:system/app/substratum/substratum.apk
 
+# Install SuperSu
+INSTALL_SUPERSU := false
+
+# Install PHH Superuser
+INSTALL_SUPERUSER := false
+
 # SuperSU
 ifneq ($(INSTALL_SUPERSU),false)
         PRODUCT_COPY_FILES += \
