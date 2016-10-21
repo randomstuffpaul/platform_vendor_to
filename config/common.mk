@@ -5,24 +5,6 @@ include vendor/to/config/bootanimation.mk
 PRODUCT_COPY_FILES += \
 vendor/to/prebuilt/common/app/substratum.apk:system/app/substratum/substratum.apk
 
-# Install SuperSu
-INSTALL_SUPERSU := false
-
-# Install PHH Superuser
-INSTALL_SUPERUSER := false
-
-# SuperSU
-ifneq ($(INSTALL_SUPERSU),false)
-        PRODUCT_COPY_FILES += \
-        vendor/to/prebuilt/common/supersu/supersu.zip:supersu/supersu.zip
-endif
-
-#PHH Superuser
-ifneq ($(INSTALL_SUPERUSER),false)
-        PRODUCT_COPY_FILES += \
-        vendor/to/prebuilt/common/app/superuser.apk:system/app/superuser/superuser.apk
-endif
-
 #Pixel Launcher
 PRODUCT_COPY_FILES += \
 vendor/to/prebuilt/common/app/PixelLauncherPrebuilt.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
@@ -86,17 +68,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # SuperSU
-ifneq ($(INSTALL_SUPERSU),false)
-        PRODUCT_COPY_FILES += \
-        vendor/to/prebuilt/common/supersu/supersu.zip:supersu/supersu.zip
-endif
-
-# Superuser Hide Root
-ifneq ($(INSTALL_SUPERUSER),false)
-        PRODUCT_COPY_FILES += \
-        vendor/to/prebuilt/common/superuser/superuser.zip:superuser/superuser.zip \
-        vendor/to/prebuilt/common/superuser/install.sh:superuser/install.sh
-endif
+PRODUCT_COPY_FILES += \
+    vendor/to/prebuilt/common/supersu/supersu.zip:supersu/supersu.zip
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
