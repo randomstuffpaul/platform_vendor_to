@@ -8,12 +8,15 @@ PRODUCT_PACKAGES += \
     Basic \
     CalendarWidget \
     LatinIME \
-    masquerade \
     OmniSwitch \
     PixelLauncher \
     KernelAdiutor \
-    substratum \
     WallpaperPickerGoogle
+
+# Substatum
+#PRODUCT_PACKAGES += \
+#    masquerade \
+#    substratum
 
 # Extra tools
 PRODUCT_PACKAGES += \
