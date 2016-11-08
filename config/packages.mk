@@ -7,7 +7,10 @@ PRODUCT_PACKAGES += \
 # Optional packages
 PRODUCT_PACKAGES += \
     Basic \
-    LatinIME
+    CalendarWidget \
+    Chromium \
+    LatinIME \
+    OmniSwitch
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -17,4 +20,5 @@ PRODUCT_PACKAGES += \
     tune2fs \
     mount.exfat \
     fsck.exfat \
-    mkfs.exfat
+    mkfs.exfat \
+    Busybox
