@@ -37,7 +37,7 @@ PRODUCT_COPY_FILES += \
 
 # Init file
 PRODUCT_COPY_FILES += \
-    vendor/to/prebuilt/common/etc/init.local.rc:root/init.du.rc
+    vendor/to/prebuilt/common/etc/init.local.rc:root/init.to.rc
 
 # Copy LatinIME for gesture typing
 PRODUCT_COPY_FILES += \
