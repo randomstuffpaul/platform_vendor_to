@@ -1,8 +1,6 @@
 # Required packages
 PRODUCT_PACKAGES += \
-    CellBroadcastReceiver \
-    Development \
-    SpareParts
+    CellBroadcastReceiver
 
 # Optional packages
 PRODUCT_PACKAGES += \
