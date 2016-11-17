@@ -1,0 +1,26 @@
+[
+    {
+      "remote":      "to",
+      "repository":  "platform_device_lge_hammerhead",
+      "target_path": "device/lge/hammerhead",
+      "revision":    "aosp-7.0"
+    },
+    {
+      "remote":      "to",
+      "repository":  "platform_kernel_lge_hammerhead",
+      "target_path": "kernel/lge/hammerhead",
+      "revision":    "aosp-7.0"
+    },
+    {
+      "remote":      "to",
+      "repository":  "proprietary_vendor_lge",
+      "target_path": "vendor/lge",
+      "revision":    "aosp-7.0"
+    },
+    {
+      "remote":      "aosp",
+      "repository":  "platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8",
+      "target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi-4.8",
+      "revision":    "master"
+    }
+]
