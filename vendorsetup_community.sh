@@ -1,1 +1,2 @@
+add_lunch_combo to_bacon-userdebug
 add_lunch_combo to_grouper-userdebug
