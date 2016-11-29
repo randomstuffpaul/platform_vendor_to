@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ "$TO_CHANGELOG" = true ]
+then
+# Add changelog
+echo -e "Creating changelog..."
+echo -e
+. $ANDROID_BUILD_TOP/vendor/to/tools/changelog
+else
+echo -e "No changelog..."
+echo -e
+fi
