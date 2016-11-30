@@ -29,4 +29,9 @@ k=$(expr $i - 1)
 done
 
 # Copy changelog to system/addon.d/
+if [ ! -d $OUT/system/addon.d ];
+then
+	mkdir -p $OUT/system/addon.d
+fi
+
 cp $Changelog $OUT/system/addon.d/
