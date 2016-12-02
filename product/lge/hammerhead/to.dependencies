@@ -16,11 +16,5 @@
       "repository":  "proprietary_vendor_lge",
       "target_path": "vendor/lge",
       "revision":    "aosp-7.1"
-    },
-    {
-      "remote":      "aosp",
-      "repository":  "platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8",
-      "target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi-4.8",
-      "revision":    "master"
     }
 ]
