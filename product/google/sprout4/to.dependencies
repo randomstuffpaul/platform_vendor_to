@@ -1,0 +1,26 @@
+[
+    {
+      "remote":      "gh",
+      "repository":  "ujwalp15/android_device_google_sprout4",
+      "target_path": "device/google/sprout4",
+      "revision":    "aosp-7.1"
+    },
+    {
+      "remote":      "gh",
+      "repository":  "ujwalp15/android_device_google_sprout-common",
+      "target_path": "device/google/sprout-common",
+      "revision":    "aosp-7.1"
+    },
+    {
+      "remote":      "gh",
+      "repository":  "ujwalp15/android_kernel_mediatek_sprout",
+      "target_path": "kernel/mediatek/sprout",
+      "revision":    "aosp-7.1"
+    },
+    {
+      "remote":      "gh",
+      "repository":  "ujwalp15/proprietary_vendor_google",
+      "target_path": "vendor/google",
+      "revision":    "aosp-7.1"
+    }
+]
