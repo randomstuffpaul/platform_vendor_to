@@ -3,18 +3,18 @@
       "remote":      "to",
       "repository":  "platform_device_huawei_angler",
       "target_path": "device/huawei/angler",
-      "revision":    "aosp-7.1"
+      "revision":    "aosp-7.1.1"
     },
     {
       "remote":      "to",
       "repository":  "platform_kernel_huawei_angler",
       "target_path": "kernel/huawei/angler",
-      "revision":    "aosp-7.1"
+      "revision":    "aosp-7.1.1"
     },
     {
       "remote":      "to",
       "repository":  "platform_vendor_huawei",
       "target_path": "vendor/huawei",
-      "revision":    "aosp-7.1"
+      "revision":    "aosp-7.1.1"
     }
 ]
