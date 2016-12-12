@@ -109,7 +109,9 @@ PRODUCT_PACKAGES += \
 
 # OctOs packages
 PRODUCT_PACKAGES += \
+    AboutOctOs \
     PixelLauncher \
+    KernelAdiutor \
     WallpaperPickerGoogle
 
 # Optional CM packages
