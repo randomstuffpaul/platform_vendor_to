@@ -40,10 +40,10 @@ function breakfast()
 {
     target=$1
     local variant=$2
-    CM_DEVICES_ONLY="true"
+    TO_DEVICES_ONLY="true"
     unset LUNCH_MENU_CHOICES
-    add_lunch_combo full-eng
-    for f in `/bin/ls vendor/to/vendorsetup.sh 2> /dev/null`
+    #add_lunch_combo full-eng
+    for f in `/bin/ls -r vendor/to/vendorsetup*.sh 2> /dev/null`
         do
             echo "including $f"
             . $f
@@ -63,7 +63,7 @@ function breakfast()
             if [ -z "$variant" ]; then
                 variant="userdebug"
             fi
-            lunch cm_$target-$variant
+            lunch to_$target-$variant
         fi
     fi
     return $?
