@@ -671,6 +671,13 @@ function cmrebase() {
 }
 
 function mka() {
+    ## Clean Up the Garbage
+    echo "Removing Previous Builds for $OUT"
+    rm -rf $OUT/system/build.prop
+    rm -rf $OUT/OCT-N*.zip*
+    rm -rf $OUT/to_*ota*.zip
+    echo "Clean Up Complete! Time to Make it Dirty"
+
     local T=$(gettop)
     if [ "$T" ]; then
         case `uname -s` in
