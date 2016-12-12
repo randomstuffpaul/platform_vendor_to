@@ -107,6 +107,11 @@ PRODUCT_PACKAGES += \
     Profiles \
     WeatherManagerService
 
+# OctOs packages
+PRODUCT_PACKAGES += \
+    PixelLauncher \
+    WallpaperPickerGoogle
+
 # Optional CM packages
 PRODUCT_PACKAGES += \
     libemoji \
