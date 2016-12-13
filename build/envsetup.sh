@@ -676,6 +676,9 @@ function mka() {
     rm -rf $OUT/system/build.prop
     rm -rf $OUT/OCT-N*.zip*
     rm -rf $OUT/to_*ota*.zip
+    rm -rf $OUT/*changelog.log
+    rm -rf $OUT/changelog.txt
+    rm -rf $OUT/system/addon.d/changelog.txt
     echo "Clean Up Complete! Time to Make it Dirty"
 
     local T=$(gettop)
