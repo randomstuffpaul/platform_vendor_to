@@ -11,3 +11,10 @@ TARGET_COPY_FILES_OVERRIDES := \
 # Add initlogo.rle as a module
 PRODUCT_PACKAGES += \
     initlogo.rle
+
+# set default USB configuration
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    sys.usb.config=mtp,adb \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.debuggabl=1
