@@ -1,0 +1,111 @@
+[center][IMG]http://www.teamoctos.com/images/teamoctos.png[/IMG][/center]
+
+[quote]Disclaimer: OctOs is a WIP. It has been evaluated as being stable, and is suitable for daily use in most cases. While it may be considered stable, there may be unknown bugs. The development team is not responsible for any damage to your device or your information.[/quote]
+
+[CENTER][SIZE="5"]Team OctOs presents Oct-N.[/SIZE][/CENTER]
+
+[CENTER]We maintain a current release record and change-log on our website: [URL="https://www.teamoctos.com/oct-n-test-builds"]http://www.teamoctos.com[/URL]
+
+We have Gapps here.
+
+[URL="http://opengapps.org"]http://opengapps.org[/URL]
+***USE 7.1.1 Gapps of your choosing, we prefer Open Gapps***
+
+
+[COLOR="Red"]- Please Do Not Mirror our files without talking to us.  We can do that ourselves should we desire to. -[/COLOR][/CENTER]
+
+
+[size=4]Feature List[/size]
+[quote][LIST]
+[*] Substatum theme engine!
+[*] Tentacles settings!
+[*] Pixel Launcher
+[*] KernelAdiutor-Mod
+[*] SuperSU
+[*] Power menu options
+[*] Screenshot
+[*] Screen record
+[*] DPI settings
+[*] Status bar time and date options
+[*] Status bar network traffic indicator
+[*] Status bar notification settings
+[*] Quick tile settings
+[*] Many quick tiles including Tentacles and KernelAdiutor-Mod
+[*] Volume button playback control
+[*] Volume button wake
+[/LIST]
+[/quote]
+
+
+[size=4]Frequently Asked Questions[/size]
+Q: Is this Android 7 (Nougat)?
+A: Yes, this is Android 7.1.1
+
+Q: What code is Oct-N based on?
+A: Oct-N thus far is based on AOSP 7.1.1
+
+Q: Why isn't there XYZ feature?
+A: Shoot us a Suggestion if you want to see something added.  While we are not going to promise to implement, we will always look into it
+
+Q: But CM and all the others have..
+A: ROM developers, including CM, build something they want to use.  The ROM developer that includes something they won't run implies less than 100% effort to ensure it does work.  As a team, we have similar goals and objectives.  If XYZ ROM has a feature you want, and we don't include (or don't want to include), feel free to use XYZ ROM, or build your own custom version of Oct-M.
+
+Q: Superuser or SuperSU?
+A: Team OctOs uses SuperSU and is installed automatically.
+
+[SIZE="4"]Bugs:[/SIZE]
+Bugs happen.  Our testers are very good at breaking things, but no where near as good as the rest of the Android public.  In order to investigate and fix issues, we need the help of the users who are going to report them.  The Android OS has many nifty features to help us in this, but only if we can engage the user to assist us.
+
+[SIZE="3"]Logs, Logcat, and the Android Debugging Bridge (ADB)[/SIZE]
+Like any other OS, Android has multiple log files that are generated and record the goings-on of the system.  As a user, you have two basic ways to view and pull these to send to us.  Without the information in the logfiles, there simply is not a whole lot of information to go on.
+
+[SIZE="3"]Log file APKs[/SIZE]
+Team OctOs recommends [URL="https://play.google.com/store/apps/details?id=com.tortel.syslog&hl=en"][COLOR="GREEN"]SysLog from the Android Market[/COLOR][/URL].  This application will allow you to selectively pick any (or all) of the system logs, compress them into a .ZIP file, and allow you to save, email, move to your Copy/DropBox/Cloud Storage account, etc.
+
+[SIZE="3"]ADB Logcat[/SIZE]
+The Android Debugging Bridge (ADB) is a powerful tool available from Google as part of the [URL="http://developer.android.com/sdk/index.html"][COLOR="GREEN"]Android Software Development Kit (SDK)[/COLOR][/URL].  Used for many things, being able to selectively see, in real-time, what your device is doing cannot be downplayed.  While there is more setup involved, if you are doing consistent ROM flashing, you really should invest the time to get setup properly to do it.
+
+[SIZE="2"]ADB Logcat tutorial here: [url=http://forum.xda-developers.com/showthread.php?t=1726238][COLOR="red"]How to create a logcat log[/COLOR][/url][/SIZE]
+
+
+[SIZE="4"]Basic Instructions:[/SIZE]
+[LIST=1]
+[*]Download ROM .zip file and MD5 file, and grab your favorite Open Gapps package [URL="http://opengapps.org/"]http://opengapps.org[/URL][*]Reboot to Recovery (Note: Use Reboot to Recovery from Power Menu, Hardware-based boot to recovery, or adb reboot recovery - ROM Manager or similar software is NOT supported)
+[COLOR="Red"]--- TWRP is the ONLY recovery Team OctOs uses - We do not support flashing on CWM ---[/COLOR]
+[*]Factory Reset from TWRP
+[*]Flash ROM and GApps .ZIP files
+[*]Reboot
+[/LIST]
+[SIZE="4"]Download[/SIZE]
+[COLOR="green"][URL="https://www.teamoctos.com/oct-n-test-builds"]Download from Team-OctOS web site![/URL][/COLOR]
+[SIZE="4"]Change log[/SIZE]
+[COLOR="green"][URL="https://www.teamoctos.com/oct-n-test-builds"]View change log on Team-OctOS web site![/URL][/COLOR]
+
+The foundation of the Android OS is the fact that is it open-source.  We have [I]all[/I] code we use internally in the creation of Oct-N available on our GitHub repositories.
+
+Unless otherwise specified, all Oct-N builds kernel souce can be found on github at [URL="http://www.github.com/Team-OctOS"][COLOR="RED"]Team-OctOS[/COLOR][/URL].
+
+[URL="http://www.github.com/Team-OctOs"]Team OctOs GitHub - http://www.github.com/Team-OctOs[/URL]
+[URL="http://review.teamoctos.com:8080"]Team OctOs Gerrit Review - http://www.teamoctos.com:8080[/URL]
+[URL="http://www.teamoctos.com/license/"]Team OctOs GPLv2 License - http://www.teamoctos.com/license/[/URL]
+[URL="https://www.patreon.com/TOctOs"]Team OctOs Patreon Campaign - https://www.patreon.com/TOctOs[/URL]
+Paypal - https://www.paypal.com/us/cgi-bin/we...37e57608011f58
+
+[SIZE="3"]Want To Build Your Own?[/SIZE]
+Check out the [URL="https://github.com/Team-OctOS/platform_manifest#team-octos-android-source"][COLOR="GREEN"]ReadMe[/COLOR][/URL] on our GitHub for Instructions
+
+[quote]Special thanks to 
+[LIST]
+[*] Our testers, without which, there would be no public releases for OctOs
+
+We would also like to thank 
+[*] AOSP
+[*] Open Gapps
+[*] Dirty Unicorns
+[*] Anyone else who has ever submitted Open-Source code
+[/LIST]
+[/quote]
+
+Follow Team-OctOS!
+[URL="https://www.facebook.com/TeamOctOs"][IMG]http://i83.photobucket.com/albums/j307/jadcy/facebook_logo_21-30x301_zps757635ef.png[/IMG][/URL] [URL="https://plus.google.com/communities/102188586220747781076/"][IMG]http://i83.photobucket.com/albums/j307/jadcy/icon_google_plus_30x30_zps145d0ba4.png[/IMG][/URL] [URL="https://www.twitter.com/TeamOctOs"][IMG]http://i83.photobucket.com/albums/j307/jadcy/twitter_icon_tcm561-115883_zps6e3322b9.jpg[/IMG][/URL]
+
