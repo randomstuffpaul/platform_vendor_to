@@ -19,6 +19,13 @@
 
 PRODUCT_COPY_FILES := device/google/marlin/apns-full-conf.xml:system/etc/apns-conf.xml
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1440
+
+# Inherit some common Team OctOs configuration
+$(call inherit-product, vendor/to/config/common_full_phone.mk)
+
 # Inherit from the common Open Source product configuration
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -26,15 +33,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 PRODUCT_NAME := to_marlin
 PRODUCT_DEVICE := marlin
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on msm8996
-PRODUCT_MANUFACTURER := google
+PRODUCT_BRAND := google
+PRODUCT_MODEL := Pixel XL
+PRODUCT_MANUFACTURER := Google
 PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_COPY_FILES += device/google/marlin/fstab.aosp_common:root/fstab.marlin
 $(call inherit-product, device/google/marlin/device-marlin.mk)
 
 $(call inherit-product-if-exists, vendor/google/marlin/device-vendor-marlin.mk)
-
+$(call inherit-product, device/google/marlin/aosp_marlin.mk)
 PRODUCT_PACKAGES += \
     Launcher3
 
+# Device Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=marlin \
+    BUILD_FINGERPRINT=google/marlin/marlin:7.1.1/NMF26O/3514931:user/release-keys \
+    PRIVATE_BUILD_DESC="marlin-user 7.1.1 NMF26O 3514931 release-keys"
