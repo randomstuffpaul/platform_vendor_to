@@ -41,12 +41,12 @@ PRODUCT_COPY_FILES += device/google/marlin/fstab.aosp_common:root/fstab.marlin
 $(call inherit-product, device/google/marlin/device-marlin.mk)
 
 $(call inherit-product-if-exists, vendor/google/marlin/device-vendor-marlin.mk)
-$(call inherit-product, device/google/marlin/aosp_marlin.mk)
+
 PRODUCT_PACKAGES += \
     Launcher3
 
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=marlin \
-    BUILD_FINGERPRINT=google/marlin/marlin:7.1.1/NMF26O/3514931:user/release-keys \
-    PRIVATE_BUILD_DESC="marlin-user 7.1.1 NMF26O 3514931 release-keys"
+    BUILD_FINGERPRINT=google/marlin/marlin:7.1.1/NMF26Q/3537182:user/release-keys \
+    PRIVATE_BUILD_DESC="marlin-user 7.1.1 NMF26Q 3537182 release-keys"
