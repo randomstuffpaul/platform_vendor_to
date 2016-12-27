@@ -1,12 +1,12 @@
 [
     {
-      "remote":      "to",
+      "remote":      "to-d",
       "repository":  "platform_device_asus_grouper",
       "target_path": "device/asus/grouper",
       "revision":    "aosp-7.0"
     },
     {
-      "remote":      "to",
+      "remote":      "to-d",
       "repository":  "platform_kernel_asus_grouper",
       "target_path": "kernel/asus/grouper",
       "revision":    "aosp-7.0"
@@ -18,31 +18,31 @@
       "revision":    "master"
     },
     {
-      "remote":      "to",
+      "remote":      "to-d",
       "repository":  "proprietary_vendor_asus",
       "target_path": "vendor/asus",
       "revision":    "aosp-7.0"
     },
     {
-      "remote":      "to",
+      "remote":      "to-d",
       "repository":  "proprietary_vendor_broadcom",
       "target_path": "vendor/broadcom",
       "revision":    "aosp-7.0"
     },
     {
-      "remote":      "to",
+      "remote":      "to-d",
       "repository":  "proprietary_vendor_invensense",
       "target_path": "vendor/invensense",
       "revision":    "aosp-7.0"
     },
     {
-      "remote":      "to",
+      "remote":      "to-d",
       "repository":  "proprietary_vendor_nvidia",
       "target_path": "vendor/nvidia",
       "revision":    "aosp-7.0"
     },
     {
-      "remote":      "to",
+      "remote":      "to-d",
       "repository":  "proprietary_vendor_widevine",
       "target_path": "vendor/widevine",
       "revision":    "aosp-7.0"

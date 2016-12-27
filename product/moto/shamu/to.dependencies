@@ -1,18 +1,18 @@
 [
     {
-      "remote":      "to",
+      "remote":      "to-d",
       "repository":  "platform_device_moto_shamu",
       "target_path": "device/moto/shamu",
       "revision":    "aosp-7.1.1"
     },
     {
-      "remote":      "to",
+      "remote":      "to-d",
       "repository":  "platform_kernel_moto_shamu",
       "target_path": "kernel/moto/shamu",
       "revision":    "aosp-7.1.1"
     },
     {
-      "remote":      "to",
+      "remote":      "to-d",
       "repository":  "proprietary_vendor_moto",
       "target_path": "vendor/moto",
       "revision":    "aosp-7.1.1"

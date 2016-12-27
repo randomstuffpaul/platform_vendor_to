@@ -1,18 +1,18 @@
 [
     {
-      "remote":      "to",
+      "remote":      "to-d",
       "repository":  "platform_device_lge_hammerhead",
       "target_path": "device/lge/hammerhead",
       "revision":    "aosp-7.1.1"
     },
     {
-      "remote":      "to",
+      "remote":      "to-d",
       "repository":  "platform_kernel_lge_hammerhead",
       "target_path": "kernel/lge/hammerhead",
       "revision":    "aosp-7.1.1"
     },
     {
-      "remote":      "to",
+      "remote":      "to-d",
       "repository":  "proprietary_vendor_lge",
       "target_path": "vendor/lge",
       "revision":    "aosp-7.1.1"
