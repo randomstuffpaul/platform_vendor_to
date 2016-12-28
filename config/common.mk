@@ -25,6 +25,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
+# OMS Verified
+PRODUCT_PROPERTY_OVERRIDES := \
+    ro.substratum.verified=true
+
 # Default notification/alarm sounds
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=Argon.ogg \
