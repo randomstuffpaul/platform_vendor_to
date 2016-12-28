@@ -107,6 +107,10 @@ PRODUCT_PACKAGES += \
     Profiles \
     WeatherManagerService
 
+# OMS MASQUERADE
+PRODUCT_PACKAGES += \
+   masquerade
+
 # OctOs packages
 PRODUCT_PACKAGES += \
     AboutOctOs \
