@@ -304,6 +304,16 @@ if __name__ == '__main__':
         # Convert the project name to a project path
         #   - check that the project path exists
         project_path = None
+        # Convert longname gerrit projects
+        if item['project'].startswith("LineageOS/"):
+            prj_to_split = item['project'].split('/', 1)
+            item['project'] = prj_to_split[1]
+        if item['project'].startswith("Team-OctOS/"):
+            prj_to_split = item['project'].split('/', 1)
+            item['project'] = prj_to_split[1]
+        if item['project'].startswith("Team-OctOS-Devices/"):
+            prj_to_split = item['project'].split('/', 1)
+            item['project'] = prj_to_split[1]
 
         if item['project'] in project_name_to_data and item['branch'] in project_name_to_data[item['project']]:
             project_path = project_name_to_data[item['project']][item['branch']]
