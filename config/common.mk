@@ -36,6 +36,7 @@ PRODUCT_COPY_FILES += \
 #Pixel Launcher
 PRODUCT_COPY_FILES += \
     vendor/to/prebuilt/common/apk/PixelLauncher.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
+    vendor/to/prebuilt/common/apk/PixelLauncherIcons.apk:system/app/pixellaunchericons/PixelLauncherIcons.apk \
     vendor/to/prebuilt/common/apk/WallpaperPickerGoogle.apk:system/app/WallpaperPickerGoogle/WallpaperPickerGooglePrebuilt.apk
 
 # Default notification/alarm sounds
