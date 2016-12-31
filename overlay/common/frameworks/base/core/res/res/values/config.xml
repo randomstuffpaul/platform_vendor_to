@@ -12,5 +12,8 @@
     <string-array name="config_disabledUntilUsedPreinstalledCarrierApps">
         <item>com.google.android.apps.tycho</item>
     </string-array>
+
+<!-- Pixel Round Icons -->
+    <bool name="config_useRoundIcon">true</bool>
 </resources>
 
