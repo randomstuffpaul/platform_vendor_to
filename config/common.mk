@@ -29,6 +29,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.substratum.verified=true
 
+#substratum
+PRODUCT_COPY_FILES += \
+    vendor/to/prebuilt/common/apk/substratum.apk:system/app/substratum/substratum.apk
+
+#Pixel Launcher
+PRODUCT_COPY_FILES += \
+    vendor/to/prebuilt/common/apk/PixelLauncher.apk:system/priv-app/PixelLauncher/PixelLauncherPrebuilt.apk \
+    vendor/to/prebuilt/common/apk/WallpaperPickerGoogle.apk:system/app/WallpaperPickerGoogle/WallpaperPickerGooglePrebuilt.apk
+
 # Default notification/alarm sounds
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=Argon.ogg \
@@ -121,7 +130,6 @@ PRODUCT_PACKAGES += \
     busybox \
     PixelLauncher \
     KernelAdiutor \
-    WallpaperPickerGoogle
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
