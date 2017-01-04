@@ -118,6 +118,7 @@ PRODUCT_PACKAGES += \
 # OctOs packages
 PRODUCT_PACKAGES += \
     AboutOctOs \
+    busybox \
     PixelLauncher \
     KernelAdiutor \
     WallpaperPickerGoogle
