@@ -42,7 +42,7 @@ Q: Is this Android 7 (Nougat)?
 A: Yes, this is Android 7.1.1
 
 Q: What code is Oct-N based on?
-A: Oct-14.1 branch is based on cm-14.1
+A: This version of Oct-N is based on LineageOS 14.1
 
 Q: Why isn't there XYZ feature?
 A: Shoot us a Suggestion if you want to see something added.  While we are not going to promise to implement, we will always look into it
@@ -77,9 +77,9 @@ The Android Debugging Bridge (ADB) is a powerful tool available from Google as p
 [*]Reboot
 [/LIST]
 [SIZE="4"]Download[/SIZE]
-[COLOR="green"][URL="https://www.teamoctos.com/oct-n-test-builds"]Download from Team-OctOS web site![/URL][/COLOR]
+[COLOR="green"][URL="https://www.teamoctos.com/oct-n-weekly-lineageos-base/"]Download from Team-OctOS web site![/URL][/COLOR]
 [SIZE="4"]Change log[/SIZE]
-[COLOR="green"][URL="https://www.teamoctos.com/oct-n-test-builds"]View change log on Team-OctOS web site![/URL][/COLOR]
+[COLOR="green"][URL="https://www.teamoctos.com/oct-n-weekly-lineageos-base/"]View change log on Team-OctOS web site![/URL][/COLOR]
 
 The foundation of the Android OS is the fact that is it open-source.  We have [I]all[/I] code we use internally in the creation of Oct-N available on our GitHub repositories.
 
@@ -94,11 +94,11 @@ Paypal - https://www.paypal.com/us/cgi-bin/we...37e57608011f58
 [SIZE="3"]Want To Build Your Own?[/SIZE]
 Check out the [URL="https://github.com/Team-OctOS/platform_manifest#team-octos-android-source"][COLOR="GREEN"]ReadMe[/COLOR][/URL] on our GitHub for Instructions
 
-[quote]Special thanks to 
+[quote]Special thanks to
 [LIST]
 [*] Our testers, without which, there would be no public releases for OctOs
 
-We would also like to thank 
+We would also like to thank
 [*] AOSP
 [*] Open Gapps
 [*] Dirty Unicorns
