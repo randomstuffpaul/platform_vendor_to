@@ -4,7 +4,7 @@
 
 [CENTER][SIZE="5"]Team OctOs presents Oct-N.[/SIZE][/CENTER]
 
-[CENTER]We maintain a current release record and change-log on our website: [URL="https://www.teamoctos.com/oct-n-test-builds"]http://www.teamoctos.com[/URL]
+[CENTER]We maintain a current release record and change-log on our website: [URL="https://www.teamoctos.com/oct-n-weekly-lineageos-base/"]http://www.teamoctos.com[/URL]
 
 We have Gapps here.
 
@@ -19,9 +19,8 @@ We have Gapps here.
 [quote][LIST]
 [*] Substatum theme engine!
 [*] Tentacles settings!
-[*] Pixel Launcher
+[*] Pixel Launcher Included
 [*] KernelAdiutor-Mod
-[*] SuperSU
 [*] Power menu options
 [*] Screenshot
 [*] Screen record
@@ -30,7 +29,6 @@ We have Gapps here.
 [*] Status bar network traffic indicator
 [*] Status bar notification settings
 [*] Quick tile settings
-[*] Many quick tiles including Tentacles and KernelAdiutor-Mod
 [*] Volume button playback control
 [*] Volume button wake
 [/LIST]
@@ -47,11 +45,11 @@ A: This version of Oct-N is based on LineageOS 14.1
 Q: Why isn't there XYZ feature?
 A: Shoot us a Suggestion if you want to see something added.  While we are not going to promise to implement, we will always look into it
 
-Q: But CM and all the others have..
-A: ROM developers, including CM, build something they want to use.  The ROM developer that includes something they won't run implies less than 100% effort to ensure it does work.  As a team, we have similar goals and objectives.  If XYZ ROM has a feature you want, and we don't include (or don't want to include), feel free to use XYZ ROM, or build your own custom version of Oct-M.
+Q: But all the others have..
+A: ROM developers, build something they want to use.  The ROM developer that includes something they won't run implies less than 100% effort to ensure it does work.  As a team, we have similar goals and objectives.  If XYZ ROM has a feature you want, and we don't include (or don't want to include), feel free to use XYZ ROM, or build your own custom version of Oct-M.
 
-Q: Superuser or SuperSU?
-A: Team OctOs uses SuperSU and is installed automatically.
+Q: What about root?
+A: Actually this version of OCT-N uses embedded root acccess which can be enabled in development settings.
 
 [SIZE="4"]Bugs:[/SIZE]
 Bugs happen.  Our testers are very good at breaking things, but no where near as good as the rest of the Android public.  In order to investigate and fix issues, we need the help of the users who are going to report them.  The Android OS has many nifty features to help us in this, but only if we can engage the user to assist us.
@@ -101,7 +99,7 @@ Check out the [URL="https://github.com/Team-OctOS/platform_manifest#team-octos-a
 We would also like to thank
 [*] AOSP
 [*] Open Gapps
-[*] Dirty Unicorns
+[*] LineageOS
 [*] Anyone else who has ever submitted Open-Source code
 [/LIST]
 [/quote]
