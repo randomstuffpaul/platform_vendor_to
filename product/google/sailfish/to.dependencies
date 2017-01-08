@@ -1,0 +1,27 @@
+[
+    {
+      "remote":      "to-d",
+      "repository":  "platform_device_google_marlin",
+      "target_path": "device/google/marlin",
+      "revision":    "aosp-7.1.1"
+    },
+    {
+      "remote":      "to-d",
+      "repository":  "platform_device_google_contexthub",
+      "target_path": "device/google/contexthub",
+      "revision":    "aosp-7.1.1"
+    },
+    {
+      "remote":      "to-d",
+      "repository":  "proprietary_vendor_google_devices",
+      "target_path": "vendor/google_devices",
+      "revision":    "aosp-7.1.1"
+    },
+    {
+      "remote":      "to-d",
+      "repository":  "platform_kernel_google_marlin",
+      "target_path": "kernel/google/marlin",
+      "revision":    "aosp-7.1.1"
+    }
+    
+]
