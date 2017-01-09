@@ -13,8 +13,8 @@
     },
     {
       "remote":      "to-d",
-      "repository":  "proprietary_vendor_google",
-      "target_path": "vendor/google",
+      "repository":  "proprietary_vendor_google_devices",
+      "target_path": "vendor/google_devices",
       "revision":    "aosp-7.1.1"
     },
     {
