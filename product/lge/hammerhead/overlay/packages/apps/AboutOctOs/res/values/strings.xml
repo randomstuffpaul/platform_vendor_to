@@ -17,13 +17,17 @@
 
     <!-- Device Maintainer can input their inforation here or set it in an overlay for the device-->
     <string name="device_support_title" translatable="false">Nexus 5 is supported by:</string>
-    <string name="dev_device" translatable="false">manfromgta</string>
+    <string name="dev_device" translatable="false">@string/dev_manfromgta</string>
     <string name="twitter_device" translatable="false">@null</string>
-    <string name="github_device" translatable="false">https://github.com/manfromgta</string>
-    <string name="gplus_device" translatable="false">https://plus.google.com/117373342816667916076</string>
+    <string name="github_device" translatable="false">@string/github_manfromgta</string>
+    <string name="gplus_device" translatable="false">@string/gplus_manfromgta</string>
     <!-- The developer photo is pulled from Gravatar using the supplied email address
          Set email_device to @null to use the fallback photo image -->
-    <string name="email_device" translatable="false">manfromgta@gmail.com</string>
+    <string name="email_device" translatable="false">@string/email_manfromgta</string>
+    <string name="support_title" translatable="false">XDA Developers Thread</string>
+    <string name="support_summary" translatable="false">Visit our support thread on XDA Developers Forum!</string>
+    <!-- when url_support_thread is set to "novalue" the support thread link is removed -->
+    <string name="url_support_thread" translatable="false">https://forum.xda-developers.com/google-nexus-5/orig-development/rom-team-octos-oct-n-10-21-14-t3485128</string>
 
     <!-- URL of the Kraken kernel for the device-->
     <string name="octos_kraken_url">http://www.teamoctos.com/kraken-kernel-oct-n/</string>
