@@ -129,6 +129,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AboutOctOs \
     busybox \
+    OmniSwitch \
     PixelLauncher \
     KernelAdiutor \
 
