@@ -9,6 +9,7 @@ PRODUCT_PACKAGES += \
     CalendarWidget \
     LatinIME \
     masquerade \
+    OctOTA \
     OmniSwitch \
     PixelLauncher \
     KernelAdiutor \
