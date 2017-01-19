@@ -40,7 +40,7 @@ usage() {
     echo -e "        2 - Send all output to a log file"
     echo ""
     echo -e "${bldblu}  Example:${bldcya}"
-    echo -e "    ./octosify.sh -c1 shamu"
+    echo -e "    ./build-oct.sh -c1 shamu"
     echo -e "${rst}"
     exit 1
 }
