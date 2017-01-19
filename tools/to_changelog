@@ -1,12 +1,13 @@
 #!/bin/sh
 
-if [ "$TO_CHANGELOG" = true ]
+if [ "$TO_CHANGELOG" = false ]
 then
-# Add changelog
-echo -e "Creating changelog..."
-echo -e
-. $ANDROID_BUILD_TOP/vendor/to/tools/changelog
+  # Do not add changelog
+  echo -e "No changelog..."
+  echo -e
 else
-echo -e "No changelog..."
-echo -e
+  # Add changelog
+  echo -e "Creating changelog..."
+  echo -e
+  . $ANDROID_BUILD_TOP/vendor/to/tools/changelog
 fi
