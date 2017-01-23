@@ -18,10 +18,8 @@
 	<apn carrier="EHRPD - SPRINT test PAM" mcc="001" mnc="010" apn="pamsn" type="dun" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
 	<!-- END APN database for Sprint EHRPD support -->
 	
-	<!-- Start of Apn database for Sprint CDMA support -->
-    <apn carrier="Sprint" mcc="310" mnc="120" apn="" type="*" mmsc="http://mms.sprintpcs.com" mmsproxy = "68.28.31.7" mmsport = "80" bearer="6" />
-    <apn carrier="Sprint" mcc="310" mnc="120" apn="" type="*" mmsc="http://mms.sprintpcs.com" mmsproxy = "68.28.31.7" mmsport = "80" bearer="7" />
-    <apn carrier="Sprint" mcc="310" mnc="120" apn="" type="*" mmsc="http://mms.sprintpcs.com" mmsproxy = "68.28.31.7" mmsport = "80" bearer="8" />
-    <apn carrier="Sprint" mcc="310" mnc="120" apn="" type="*" mmsc="http://mms.sprintpcs.com" mmsproxy = "68.28.31.7" mmsport = "80" bearer="12" />
-    <!-- End of Apn database for Sprint CDMA support -->
+	<!-- VIRGIN MOBILE CUSTOM APNS -->
+	<apn carrier="APN1 Virgin Internet LTE" numeric="310120" mcc="310" mnc="120" apn="n.vmu.ispsn" user="Sprint" server="" password="*" proxy="null" port="null" mmsproxy="68.28.31.7" mmsport="80" mmsprotocol="null" mmsc="http://mmsc.vmobl.com:8088/mms?type=null" type="default,supl,mms,fota,dun" bearer="14" /> 
+	<apn carrier="APN2 Virgin Internet EHRPD" numeric="310120" mcc="310" mnc="120" apn="n.vmu.ispsn" user="Sprint" server="" password="*" proxy="null" port="null" mmsproxy="68.28.31.7" mmsport="80" mmsprotocol="null" mmsc="http://mmsc.vmobl.com:8088/mms?type=null" type="default,supl,mms,fota,dun" bearer="13" />
+	<!-- END VIRGIN MOBILE CUSTOM APNS-->	
 </apns>
