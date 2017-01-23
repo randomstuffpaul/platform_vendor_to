@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <apns version="8">
-<!-- Sprint/FreedomPop -->
 	<!-- Modify APN for Sprint LTE support -->
 	<apn carrier="LTE - SPRINT test ISP" mcc="001" mnc="01" apn="n.ispsn" type="default,mms" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
 	<apn carrier="LTE - SPRINT test OTA" mcc="001" mnc="01" apn="otasn" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
